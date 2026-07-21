@@ -8,6 +8,12 @@
 
 Here is the Link Preview: https://kesavsoft-task2.netlify.app/
 
+##Screenshots here: <img width="1515" height="687" alt="image" src="https://github.com/user-attachments/assets/1c8118ab-9fad-4099-a6b5-c96946fe9d9a" /> 
+<img width="1445" height="618" alt="image" src="https://github.com/user-attachments/assets/2e30e10e-a95b-4d70-b201-7425c08263b5" />
+<img width="1432" height="686" alt="image" src="https://github.com/user-attachments/assets/f55a19d0-1405-457f-a9ea-ba65d71aaf9a" />
+<img width="1487" height="680" alt="image" src="https://github.com/user-attachments/assets/d80a32d5-4182-4c78-9fe6-9db50442537e" />
+
+
 ## Technology Stack Choices
 
 ✅ **Templating Engine:** Nunjucks - Selected for its powerful inheritance, filters, and macros  
