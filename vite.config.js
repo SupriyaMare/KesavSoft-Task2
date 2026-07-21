@@ -14,10 +14,10 @@ const nunjucksEnv = new nunjucks.Environment(
 
 function nunjucksDevMiddleware(nunjucksEnv) {
   const pageMap = new Map([
-    ['/', 'index.njk'],
-    ['/index.html', 'index.njk'],
-    ['/about.html', 'about.njk'],
-    ['/contact.html', 'contact.njk'],
+    ['/', 'index.html'],
+    ['/index.html', 'index.html'],
+    ['/about.html', 'about.html'],
+    ['/contact.html', 'contact.html'],
   ]);
 
   return {
@@ -58,9 +58,9 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        index: resolve(__dirname, 'src/templates/index.njk'),
-        about: resolve(__dirname, 'src/templates/about.njk'),
-        contact: resolve(__dirname, 'src/templates/contact.njk'),
+        index: resolve(__dirname, 'src/templates/index.html'),
+        about: resolve(__dirname, 'src/templates/about.html'),
+        contact: resolve(__dirname, 'src/templates/contact.html'),
       },
       output: {
         entryFileNames: '[name].js',
