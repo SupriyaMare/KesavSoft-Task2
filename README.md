@@ -6,7 +6,7 @@
 
 ---
 
-Here is the Link Preview: 
+Here is the Link Preview: https://kesavsoft-task2.netlify.app/
 
 ## Technology Stack Choices
 
