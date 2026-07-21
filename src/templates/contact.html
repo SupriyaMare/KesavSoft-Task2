@@ -1,0 +1,82 @@
+{% extends "_layout.html" %}
+
+{% set title = "Contact — Lumio Studio" %}
+{% set description = "Contact Lumio Studio to start a project." %}
+{% set activePage = "contact" %}
+
+{% block content %}
+<section class="page-hero pb-4">
+  <div class="container py-5 py-lg-6">
+    <p class="eyebrow">Contact</p>
+    <div class="row">
+      <div class="col-lg-8">
+        <h1 class="display-3 fw-semibold lh-sm">What are you making <em>next?</em></h1>
+        <p class="lead text-secondary mt-4">Tell us a little about it. We'll reply within two working days.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pb-5 py-lg-6">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-7">
+        <form id="contactForm" class="needs-validation contact-form" novalidate>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <label for="name" class="form-label">Your name</label>
+              <input id="name" class="form-control" type="text" autocomplete="name" required>
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email address</label>
+              <input id="email" class="form-control" type="email" autocomplete="email" required>
+              <div class="invalid-feedback">Enter a valid email address.</div>
+            </div>
+            <div class="col-12">
+              <label for="company" class="form-label">Company or project name <span class="text-secondary">(optional)</span></label>
+              <input id="company" class="form-control" type="text">
+            </div>
+            <div class="col-12">
+              <label for="service" class="form-label">What can we help with?</label>
+              <select id="service" class="form-select" required>
+                <option value="" selected disabled>Choose one</option>
+                <option>Brand strategy</option>
+                <option>Visual identity</option>
+                <option>Website design</option>
+                <option>Campaign creative</option>
+                <option>Something else</option>
+              </select>
+              <div class="invalid-feedback">Please choose an option.</div>
+            </div>
+            <div class="col-12">
+              <label for="message" class="form-label">Tell us a little more</label>
+              <textarea id="message" class="form-control" rows="5" required placeholder="Your goals, timeline, and anything else we should know."></textarea>
+              <div class="invalid-feedback">Please add a short message.</div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-dark btn-lg rounded-pill px-4" type="submit">Send message →</button>
+            </div>
+          </div>
+        </form>
+        <div id="formSuccess" class="alert alert-success mt-4 d-none" role="alert">
+          <strong>Message sent!</strong> Thanks for reaching out. We'll get back to you soon.
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="contact-aside">
+          <p class="eyebrow mb-3">Direct contact</p>
+          <h3 class="display-6 fw-semibold mb-4">Let's make something<br>brilliant together.</h3>
+          <p class="text-secondary mb-4">Or if you prefer, reach out directly:</p>
+          <p class="mb-1"><strong>Email</strong></p>
+          <a href="mailto:hello@lumio.studio" class="link-dark mb-4 d-block">hello@lumio.studio</a>
+          <p class="mb-1"><strong>Phone</strong></p>
+          <a href="tel:+919876543210" class="link-dark mb-4 d-block">+91 98765 43210</a>
+          <p class="mb-1"><strong>Studio</strong></p>
+          <p class="text-secondary">Mumbai, India</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
